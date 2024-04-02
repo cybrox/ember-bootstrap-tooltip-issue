@@ -1,7 +1,26 @@
 {{page-title "Repro"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<div style="margin-top: 200px; margin-left: 200px;">
+  <BsButton class="mb-1">
+    Tooltip on left
+    <BsTooltip @placement="left">Tooltip on left</BsTooltip>
+  </BsButton>
+  <BsButton class="mb-1">
+    Tooltip on top
+    <BsTooltip @placement="top">Tooltip on top</BsTooltip>
+  </BsButton>
+  <BsButton class="mb-1">
+    Tooltip on bottom
+    <BsTooltip @placement="bottom">Tooltip on bottom</BsTooltip>
+  </BsButton>
+  <BsButton class="mb-1">
+    Tooltip on right
+    <BsTooltip @placement="right">Tooltip on right</BsTooltip>
+  </BsButton>
+  <BsButton class="mb-1">
+    Click tooltip
+    <BsTooltip @triggerEvents="click">Click tooltip</BsTooltip>
+  </BsButton>
+</div>
 
 {{outlet}}
